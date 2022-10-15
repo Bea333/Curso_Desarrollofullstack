@@ -1,0 +1,168 @@
+/* Normalize */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    padding: 20vh 10% ;
+    
+}
+.titleContainer h1{
+    text-align: center;
+    margin-bottom: 7vh;
+    font-size: 3rem;
+}
+.formRegister{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+}
+.textContainerForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8vh;
+}
+.errorText{
+    color: #D97A84;
+    text-align: center;
+}
+.input{
+    padding: 10px 3px;
+    border: none;
+    border-bottom: 1px solid ;
+}
+.submit{
+    padding: 12px;
+    background-color: black;
+    color: white;
+    font-size: 1.1rem;
+    border: 1px solid white ;
+}
+.submit:hover{
+    transition: 0.5s all;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+.textContainerForm p a{
+    font-weight: bold;
+    color: #161614;
+}
+}
+
+/* 
+SON medidas relativas, como porcentaje pero toman como referencia siempre al tamaño de la pantalla disponible
+vh = view heigth (altura del eje y)
+vw = view width (anchura del eje x)
+*/
+  1  
+clase-repaso-13-9-2022/index.html
+@@ -30,6 +30,7 @@ <h1>Regístrate</h1>
+        </form>
+        <div class="textContainerForm">
+            <p>¿Ya eres miembro? <a href="#">Inicia tu sesión</a></p>
+
+            <p class="errorText">Si se produce un error al completar el formulario aparecerá un mensaje aquí</p>
+        </div>
+    </main>
+ 15  
+clase11/index.html
+@@ -0,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
+ 81  
+clase11/script.js
+@@ -0,0 +1,81 @@
+/* index = indice */
+
+/* let lista = [1, 2, 3];
+console.log(lista[0]);
+let respuesta = prompt("hola")
+console.log(respuesta) */
+
+//Actividad 1
+
+/* let numero = parseFloat(prompt("ingrese un numero"))
+if(numero > 1000){
+    alert("es mayor a 1000")
+}else{
+    alert("es menor a 1000")
+} */
+
+/* condicion ? true : false */
+
+/* numero >= 1000 ?  alert("es mayor a 1000") : alert("es menor a 1000")
+ */
+
+//Actividad 2 
+/* 
+let mensaje = prompt("ingrese algo") */
+
+
+//Actividad 3
+
+/* let numero = parseFloat(prompt("ingrese un numero"))
+if(numero >= 10 && numero <= 50){
+    alert("El numero esta entre 10 y 50")
+}else if( numero < 10 || numero > 50){
+    alert("El numero es menor a 10 o mayor a 50")
+}else{
+    alert("ERROR: Ingresaste un valor no valido")
+} */
+//OR = ||
+// true true = true
+// true false/false true = true
+// false false = false
+
+//AND = &&
+// true true = true
+// true false/false true = false
+// false false = false
+
+/* if(mensaje === "Hola" || mensaje === "hola"){
+    document.write("Hola... buenos dias!")
+} */
+
+//Switch
+
+/* s */
+
+
+//ultima actividad
+/* let numero = parseFloat(prompt("Ingrese un numero"))
+let esMayorADiez = numero > 10 // puede solo ser TRUE o FALSE
+let esMenorOIgualADiez = numero <= 10
+if(esMayorADiez){
+    document.write("El numero es mayor a 10")
+}else if(esMenorOIgualADiez){
+    document.write("El numero es menor o igual a 10")
+}else{
+    
+    document.write("El dato ingresado no es un numero")
+    
+} *
