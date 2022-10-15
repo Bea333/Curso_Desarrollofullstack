@@ -1,15 +1,15 @@
 * -----------------------------INDEX CSS------------------------------ */
 
 
-/* NORMALIZE ( se aplica a todo el docuemnto */
+/* NORMALIZE */
 
 *{
-    padding: 0;/* quitar bordes  */
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: monospace;
-    text-decoration: none;/* quitar subrayado */
-    color: black;
+    text-decoration: none;
+
 }
 .body{
     /* background-color: rgb(0, 0, 0); */
@@ -80,9 +80,7 @@
     background-color: darkblue;
     grid-area: footer;
 }
-.iconCart{
-    width: 20px;
-}
+
 .inputsContainer{
     display: flex;
     flex-direction: column;
