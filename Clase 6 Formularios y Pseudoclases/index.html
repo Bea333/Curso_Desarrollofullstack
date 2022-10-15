@@ -31,18 +31,35 @@
 </main>
 <aside class="aside">
     ><form action="">
-        <fieldset>
+        <fieldset class="InputsContainer">
         <leyend>Registro</leyend>
         <h3 Completa el siguiente  formulario></h3>
+        
         <div>
             <label for="username">Nombre:</label> 
             <input type="text" name="username" id="username" placeholder="Nombre">
         </div>
-        <div>
+        
+        <div class="contenedordiv">
             <label for= "lastname"> Apellido:</label>
-        </div>
+            <input type="text" name="apellido" id="lastname"
+            placeholder="Apellido"
+        </div> 
 
-        </fieldset>
+        <div class="Contenedorpaises">
+        <label for="Country">Pais:</label>
+        <!-- Lista de Opciones -->
+        <select name="Country" id="Country">
+            <option value="Argentina"></Argentina></option>
+            <option value="Chile"></Chile></option>
+            <option value="Brasil"></Brasil></option>
+            <option value="Uruguay"></Uruguay></option>
+        </select>
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+        </div>
+       </fieldset>
     </form>
 </aside>
     
