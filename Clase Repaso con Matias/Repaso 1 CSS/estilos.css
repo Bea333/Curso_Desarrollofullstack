@@ -1,0 +1,93 @@
+/* Normalize */
+/* Para aplicar a todas las propiedades de la pagina debo llamar 
+con ASTERISCO */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     /* Sacarle el subrayado a todos los textos */
+    text-decoration: none;
+    color: black;
+    /*Font extraida de Google, se pone en CSS para que toda la pagina tenga la misma familia*/
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    /* PADDING:  si las medidas se toman como 
+    agujas del reloj, hacia la izquierda, con tan solo poner 2 valores visual ya lo entiende*/
+    padding: 20vh 3% 20vh 3%;
+
+}
+/* con h1 solo en la clase solo trabajamos con el titulo REGISTRATE y se puede volver a utilizar  */
+
+.titleContainer h1{/*Registrate*/
+    /* Poner el Texto en el medio */
+    text-align: center;
+    /* Separar el titulo de las columnas*/ 
+    margin-bottom: 3vh;
+    /* Ampliamos la medidad del titulo */
+    font-size: 3rem;
+
+}
+
+.formRegister{ /* Formulario */
+    /* Cada vez que deseo usar Flexbox en el padre, debo escribir DISPLAY FLEX */
+    display: flex;
+    /* Poner direccion x o y a las columnas */
+    flex-direction: column;
+    /* poner tamaño al formulario, pero impacta en el main, como relacion padre de form */
+    width: 50%;
+    gap: 3vh;
+
+}
+
+.maincontainer{/* Contiene al Formulario */
+    /* Como Main contiene a Form debe tener tambien la propiedad DISPLAY FLEX */
+    display: flex;
+   /*  Alinear las columnas de Nombre, apellido, etc al centro */
+    flex-direction: column; /* Colum pone todo en el eje x */
+    align-items: center;/* Aline solo alinea cuando el Flex direction esta en Colum EJE X */
+    /*flex-direction: row;*/
+    /*justify-content: left; Alinea solo el EJE Y y se utiliza con Flex direction; ROW */
+    gap: 5vh; /* esta propiedad separa a todos los hijos de un flex*/
+
+}
+.textContainerForm{ /* ¿Ya eres miembro? */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+}
+.ErrorText{ /* extrajimos en color de la pagina de Figma*/
+    color:#D97A84;
+    text-align: center; /* texto centrado*/
+
+}
+.input{/* margenes de los cuadros */
+    padding: 10 vh 3%;
+    border: none;
+    /* Borde de cuadros */
+    border-bottom: 1px solid black;
+}
+.submit{
+    padding: 3vh;
+    background-color: black;
+    color: white;
+    font-size: 1.2rem;
+    /*border: none;
+    text-align: center;*/
+    /*al cambiar el borde permite que la letra no se modifique con la pseudocalse aplicada*/
+    border: 1px solid white;
+
+}
+.submit:hover{ /* Pseudoclase*/  
+    transition: 1s all; /*Transicion de cambio de color 1 segundo*/
+    background-color: white; /* Permite fondo blanco del boton*/
+    border: 1px solid black; /* Permite ver borde blanco al clikear*/
+    color: black; /* Fuente Registrate en Blanco*/
+}
+.textContainerForm p a{ /* Inicia tu sesion en negrita*/
+    font-weight: bold;
+    color: #161614;
+}

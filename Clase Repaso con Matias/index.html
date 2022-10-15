@@ -3,37 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uso de Listas <html></html></title>
+    <meta name="viewport" content="width=, initial-scale=1.0">
+     <!-- Fuente extraida de Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="/Repaso 1 CSS/estilos.css">
+    <title>Ejercitando Formularios en CSSt</title>
 </head>
 <body>
-    <h1>Como hacer un biscochuelo a lo Argento</h1>
-    <h2>Ingredientes</h2>
-<!-- Lista desordenada -->
-<ul>
-<li>1 taza de harina Blancaflor..lo mas!</li>
-<li>3 huevos</li>
-<li>200 mll de Leche La Serenisima</li>
-<li>60 Mll de Aceite</li>
-<li>1 taza de Azucar Ledesma</li>
-<li>1 rayadura de limón( No incluir la parte blanca, esa es re amarga!!!)</li>
-</ul>   
-<h2>Pasos a Seguir y Haceme caso!!!</h2>
-<!-- Lista Ordenada -->
-<ol>
-<Li>Encender el Horno a 180 Grados</Li>
-<Li>Enmantecá y enhariná el molde para el biscochuelo, que sea grande y alto ehh!!</Li>
-<Li>Ahora tira adentro del Boul el azucar, huevo, aceite y rayadura del limón</Li>
-<Li>Batiiiiii..hasta que el brazo de diga...BASTA!! o sea el preparado se vuelve blanco, tipo cremoso</Li>
-<Li>Ahora agregá la harina y anda agregando de a poco la leche ...Batiiiiiiiii </Li>
-<Li>Seguí batiendo, ese es el secreto! , cuando veas que el preparado tiene una textura con globitos ya está!!</Li>
-<Li>Ahora tira todo al molde y llevalo al horno</Li>
-<Li>No abras el horno POR NADA DEL MUNDO hasta que pase minimo 30 minutos</Li>
-<Li>Cuano lo abras solo miralo rapido y verificá que se esté cocinando parejo, sino giralo despacio y volve a cerrar la tapa del horno</Li>
-<Li>Dejalo hata que pasen los 40 min</Li>
-<Li>Sacalo, pincha en el medio con un cuchillo o un
- palito de brochete y si sale seco está perfecto!!..sino metelo 10 minutos más al horno , pero vigilando que no se queme!</Li>
-</ol> 
-<p>Espero te hay salido el ejerciico y te dé ganas de hacerte un rico biscochuelo para compartir con un rico matezitooo</p>
-</body>
+    <header class="titleContainer">
+        <h1>Regístrate</h1>
+    </header>
+    <main class="maincontainer">  <!-- CSS: Main contiene a mi formulario -->
+
+        <Form action="" class="formRegister"> <!-- CSS: Form contiene a mis Input -->
+
+                <input type="text" placeholder="Nombre"
+                name="name" id="name" required class="input"/> 
+
+                <!-- Requiere el nombre -->
+                <input type="text" placeholder="Apellido"
+                name="lastname" id="lastname" class="input"/>
+
+                <input type="email" placeholder="Email"
+                name="email" id="email" requerido class="input"/>
+
+                <!-- required :Requiere la contraseña -->
+                <input type="password" placeholder="Contraseña"
+                name="password" id="password" required class="input"/>
+
+                <!--   Puede ser un button pero no envia nada.
+                Submit: el mismo guía y envía el formulario -->
+            
+                <input type="submit" value="Regístrate" class="submit">
+
+
+        </Form>
+        <div class="textContainerForm">
+                <p> ¿Ya eres miembro? <a href="#" >Inicia tu sesión</a></p>
+                    
+                <p class="ErrorText"> Si se produce un error al completar
+                    el formulario aprarecerá un mensaje aquí</p>
+        </div>
+    </main>
+    </body>
 </html>
