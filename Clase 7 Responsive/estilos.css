@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Mobile FIRST */
+body{
+    background-color: aqua;
+}
+
+.tienda{
+    background-color: brown; /*Diferenciar secciones*/
+    text-align: center;/* Centrar imagenes*/
+    padding: 2rem;
+
+}
+.tienda img{ /*Se utiliza el concepto de Herencia, Div-->Tienda-->img .
+            Aplica a todas las imagenes el mismo estilo*/
+    width: 60%; /*Tamaño de cada imagen*/
+}
+.comunidad{/*Texto*/
+    background-color: blueviolet;
+    padding-top: 2rem;    
+    text-align: center;
+
+}
+
+.comunidad img{
+    width: 80%;    
+
+}
+
+.texto, .footer{    /*Cambiamos de color el texto y al footer*/
+    padding: 2rem;
+    color: aliceblue;
+}
+
+.footer{
+    background-color: black;
+}
+@media(min-width:552px){
+    .agregado{
+        display: none;
+    }
+}
+/* EJEMPLO AND
+@media (min-widht 768px) and (max-widht:1024px) {
+    
+}*/
+
+/* TABLETAS */ /*Media Queri basica , solo lo uso lo que quiero cambiar lo que viene por defecto del css anterior*/
+@media(min-width:768px){/* Cambia la disposicion del contenido, segun lo que se vea*/
+
+    body{
+        background-color: cadetblue;/*Aca se le dice a la propiedad @media que cambie de color al lleagr a 768*/
+    }
+    .tienda{
+        display: flex;
+        flex-wrap: wrap;
+        background-color: rgb(225, 186, 135);
+    }
+    .tienda div{/*Div es un elemento en bloque , si utilizamos Flex-wrap en la clase .tienda pisa la propiedad */ 
+        width: 30%;
+    }
+    .tienda img{
+        width: 90%;
+    }
+    .comunidad{
+        display: flex;
+    }  
+    .agregado{/*clase para que sea la palabra oculta solo en tablets*/
+        display: block;
+    }
+
+
+}
+@media(min-width:768px) and (max-width:1024px){
+    .tienda{
+        text-align: left;
+    }
+
+}
+
+/* ESCRITORIOS NORMALES */
+
+@media(min-width:992px){
+    .tienda{
+        flex-wrap: nowrap;/*Ahora no cortes la imagen*/
+    }
+}
+
+/* PANTALLAS GRANDES */
+@media(min-width:1200px){/*
+    body{
+        background-color: chocolate;
+    }
+  
+}
