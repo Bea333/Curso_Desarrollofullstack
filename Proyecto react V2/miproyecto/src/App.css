@@ -1,0 +1,9 @@
+.App {
+    display: (flex);
+    padding: 50px;
+    margin:100px auto;
+    height: 100vh;
+    background: rgb(131, 58, 180);
+    background: linear-gradient(290deg, rgba(131, 58, 180, 1) 0%,
+            rgba(51, 29, 253, 1) 50%, rgba(69, 174, 252, 1) 100%);
+}
